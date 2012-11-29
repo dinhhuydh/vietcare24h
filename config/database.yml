@@ -18,6 +18,7 @@ test:
 production:
   <<: *development
   database: vietcare24h_production
+  host: <%= ENV['DATABASE_URL'] %>
 
 staging:
   <<: *development
