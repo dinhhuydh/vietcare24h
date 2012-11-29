@@ -3,7 +3,7 @@ development: &development
   database: vietcare24h_development
   username:
   password:
-  host:     localhost
+  host: <%= ENV['DATABASE_URL'] %>
   port:     5432
   schema_search_path: public
   min_messages: warning
