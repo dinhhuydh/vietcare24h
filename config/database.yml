@@ -16,7 +16,12 @@ test:
   database: vietcare24h_test
 
 production:
-  <<: *development
+  adapter: postgresql
+  username:
+  password:
+  port:     5432
+  schema_search_path: public
+  min_messages: warning
   database: vietcare24h_production
   host: <%= ENV['DATABASE_URL'] %>
 
