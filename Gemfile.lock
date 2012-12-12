@@ -8,6 +8,14 @@ GIT
       devise (~> 2.0.4)
       spree_core
 
+GIT
+  remote: git://github.com/spree/spree_i18n.git
+  revision: 3d9961e650880118fd6e2399325ebd068b9fbe53
+  specs:
+    spree_i18n (1.0.0)
+      i18n (~> 0.5)
+      spree (~> 1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -72,6 +80,14 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
+    columnize (0.3.6)
+    debugger (1.2.2)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.1.1)
+      debugger-ruby_core_source (~> 1.1.5)
+    debugger-linecache (1.1.2)
+      debugger-ruby_core_source (>= 1.1.1)
+    debugger-ruby_core_source (1.1.5)
     deface (0.9.1)
       nokogiri (~> 1.5.0)
       rails (~> 3.1)
@@ -245,6 +261,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  debugger
   execjs
   jquery-rails
   pg
@@ -252,6 +269,7 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   spree (= 1.2.2)
   spree_auth_devise!
+  spree_i18n!
   spree_skrill
   spree_usa_epay
   therubyracer

@@ -8,7 +8,8 @@
 Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
-  # config.site_name = "Spree Demo Site"
+  #config.site_name = "VietCare24h"
+  config.default_locale = 'vn'
 end
 
 Spree.user_class = "Spree::User"
