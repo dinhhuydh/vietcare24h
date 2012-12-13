@@ -13,3 +13,9 @@ Spree.config do |config|
 end
 
 Spree.user_class = "Spree::User"
+
+class Product < Spree::Product
+end
+
+class Taxon < Spree::Taxon
+end

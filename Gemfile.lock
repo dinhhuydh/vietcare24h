@@ -16,6 +16,15 @@ GIT
       i18n (~> 0.5)
       spree (~> 1.1)
 
+GIT
+  remote: git://github.com/tomash/globalize-spree.git
+  revision: 8eca2ce2526cbab49fe03b97c5335e653076a5ab
+  specs:
+    globalize_spree (0.2.1)
+      globalize3 (>= 0.0.9)
+      i18n (>= 0.4.2)
+      spree_core (>= 0.70.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -100,6 +109,10 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffaker (1.12.1)
+    globalize3 (0.2.0)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      paper_trail (~> 2)
     gyoku (0.4.6)
       builder (>= 2.1.2)
     highline (1.6.11)
@@ -133,6 +146,9 @@ GEM
     nokogiri (1.5.5)
     nori (1.1.3)
     orm_adapter (0.0.7)
+    paper_trail (2.6.4)
+      activerecord (~> 3.0)
+      railties (~> 3.0)
     paperclip (2.8.0)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
@@ -263,6 +279,9 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   debugger
   execjs
+  globalize3
+  globalize_spree!
+  i18n
   jquery-rails
   pg
   rails (= 3.2.9)
