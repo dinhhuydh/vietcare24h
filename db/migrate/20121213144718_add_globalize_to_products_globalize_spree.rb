@@ -4,7 +4,7 @@ class AddGlobalizeToProductsGlobalizeSpree < ActiveRecord::Migration
     #Spree::Product.create_translation_table! :name => :string, :description => :text
     
     # save old values into brand new translations table
-    Spree::Product.migrate_translated_fields
+    Product.migrate_translated_fields
   end
 
   def self.down
