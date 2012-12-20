@@ -10,6 +10,8 @@ Spree.config do |config|
   # Uncomment to override the default site name.
   #config.site_name = "VietCare24h"
   config.default_locale = 'vn'
+  config.logo = 'store/vietcare24h_logo.jpg'
+  config.admin_interface_logo = 'admin/admin_logo.jpg'
 end
 
 Spree.user_class = "Spree::User"
