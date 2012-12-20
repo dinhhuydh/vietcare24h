@@ -17,6 +17,14 @@ GIT
       spree (~> 1.1)
 
 GIT
+  remote: git://github.com/spree/spree_static_content.git
+  revision: 22fcacc887363b4ce2e742d9a1dd08ddfdac3572
+  branch: 1-2-stable
+  specs:
+    spree_static_content (1.1.0.beta)
+      spree_core (~> 1.2.0)
+
+GIT
   remote: git://github.com/tomash/globalize-spree.git
   revision: 8eca2ce2526cbab49fe03b97c5335e653076a5ab
   specs:
@@ -290,6 +298,7 @@ DEPENDENCIES
   spree_auth_devise!
   spree_i18n!
   spree_skrill
+  spree_static_content!
   spree_usa_epay
   therubyracer
   uglifier (>= 1.0.3)

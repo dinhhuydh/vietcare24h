@@ -41,6 +41,7 @@ gem 'spree_usa_epay'
 gem 'spree_skrill'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-2-stable'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
+gem 'spree_static_content', :git => 'git://github.com/spree/spree_static_content.git', :branch => '1-2-stable'
 
 gem "globalize_spree", :git => 'git://github.com/tomash/globalize-spree.git'
 gem "i18n"
