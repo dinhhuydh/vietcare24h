@@ -21,3 +21,10 @@ end
 
 class Taxon < Spree::Taxon
 end
+
+Spree::Page.class_eval do
+  translates :title, :body
+  
+  extend Globalize::Migratable
+end
+
