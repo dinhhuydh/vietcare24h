@@ -12,6 +12,11 @@ Spree.config do |config|
   config.default_locale = 'vn'
   config.logo = 'store/vietcare24h_logo.jpg'
   config.admin_interface_logo = 'admin/admin_logo.jpg'
+
+  config.use_s3 = true
+  config.s3_bucket = 'vietcare24h'
+  config.s3_access_key = ENV['S3_ACCESS_KEY']
+  config.s3_secret = ENV['S3_SECRET'] 
 end
 
 Spree.user_class = "Spree::User"
