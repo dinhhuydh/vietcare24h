@@ -1,1 +1,1 @@
-rmv use 1.9.3-p194@vietcare24h --create
+rvm use 1.9.3-p194@vietcare24h --create
