@@ -44,6 +44,7 @@ gem 'spree_i18n', :git => 'git://github.com/dinhhuydh/spree_i18n.git'
 gem 'spree_static_content', :git => 'git://github.com/spree/spree_static_content.git', :branch => '1-2-stable'
 gem 'spree_editor', :git => 'git://github.com/spree/spree_editor.git'
 gem 'tinymce-rails', '~> 3.5.8'
+gem 'tinymce-rails-langs'
 
 gem "globalize_spree", :git => 'git://github.com/tomash/globalize-spree.git'
 gem "i18n"
