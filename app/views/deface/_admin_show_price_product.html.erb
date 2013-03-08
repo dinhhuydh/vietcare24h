@@ -1,0 +1,5 @@
+<p>
+  <%= label_tag 'product[show_price]', t(:show_price) %>
+  <%= check_box_tag "show_price", @product.show_price, @product.show_price, onclick: 'toggleShowPrice()' %>
+  <%= hidden_field_tag 'product[show_price]', @product.show_price %>
+</p>

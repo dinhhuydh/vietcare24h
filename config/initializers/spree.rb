@@ -35,6 +35,15 @@ end
 
 Spree::Product.class_eval do
   translates :name, :description
+  attr_accessible :show_price 
+
+  def display_price
+    if show_price
+      Spree::Money.new(price).to_s
+    else
+      ""
+    end
+  end
   
   extend Globalize::Migratable
 end
