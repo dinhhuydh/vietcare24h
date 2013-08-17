@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -36,7 +36,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-gem 'spree', '1.2.2'
+gem 'spree', git: 'git@github.com:dinhhuydh/spree.git', branch: '1-2-stable'
 gem 'spree_usa_epay'
 gem 'spree_skrill'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-2-stable'
@@ -49,4 +49,9 @@ gem "globalize3"
 
 group :development, :test do
   gem 'debugger'
+end
+
+group :development do
+  gem 'quiet_assets'
+  gem 'letter_opener'
 end
